@@ -341,40 +341,6 @@
     text-decoration: underline;
 }
 
-/* ======================================= */
-/* 📱 RESPONSIVE DESIGN FOR SERVICES PAGE  */
-/* ======================================= */
-
-
-/* ---------- Medium Screens (Tabs < 1100px) ---------- */
-@media(max-width: 1100px) {
-
-    .nav-links a {
-        font-size: 20px;
-    }
-
-    .btn-outline,
-    .btn-filled {
-        font-size: 20px;
-        padding: 8px 20px;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .hero p {
-        font-size: 16px;
-        max-width: 700px;
-    }
-
-    .services-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-
 @media(max-width: 900px) {
 
 
