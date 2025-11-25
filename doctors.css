@@ -375,82 +375,100 @@
     font-size: 30px;
     text-align: center;
 }
-@media (max-width: 900px){
 
+@media (max-width: 900px) {
 
-    .navbar{
+ 
+    .navbar {
         flex-direction: column;
         height: auto;
-        gap: 10px;
-        padding: 12px;
+        gap: 15px;
+        padding: 18px 10px 22px;
     }
-    .nav-links{
-        flex-direction: column;
-        gap: 12px;
-    }
-    .nav-buttons{
+
+    .logo {
         justify-content: center;
     }
 
-    .hero{
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+
+    .btn-outline,
+    .btn-filled {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+
+    .hero {
         padding: 50px 20px;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 36px;
     }
 
-    .services-container{
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .services-container {
         grid-template-columns: 1fr;
         padding: 20px;
     }
-    .service-item{
+
+    .service-item {
         max-width: 420px;
         margin: auto;
     }
 
-    .stats{
+    .card-image {
+        height: 220px;
+    }
+
+    .doc-name {
+        font-size: 20px;
+    }
+
+
+    .stats {
         flex-direction: column;
         padding: 20px 10px;
+        gap: 15px;
     }
-    .stats h3{
+
+    .stats h3 {
         font-size: 35px;
     }
-    .stats p{
+
+    .stats p {
         font-size: 20px;
     }
-}
-@media (max-width: 992px){
 
-
-    .nav-links a{
-        font-size: 20px;
-    }
-    .btn-outline,
-    .btn-filled{
-        font-size: 20px;
-        padding: 10px 20px;
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        text-align: center;
     }
 
-    .hero h1{
-        font-size: 45px;
-    }
-    .hero p{
-        font-size: 16px;
+    .footer-logo {
+        justify-content: center;
     }
 
-    .services-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-
-    .stats{
-        gap:20px;
-        padding: 20px;
-    }
-    .stats h3{
-        font-size: 40px;
-    }
-    .stats p{
-        font-size: 22px;
+    .footer-bottom {
+        grid-column: 1 / -1;
+        font-size: 12px;
     }
 }

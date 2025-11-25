@@ -1,5 +1,4 @@
 body {
-            font-family: Arial, sans-serif;
             background: #f4f4f4;
             padding: 0;
             margin: 0;
@@ -56,5 +55,5 @@ body {
 
         button:hover {
             background: #00796b;
-            transform: translateY(-2px);
+            transform: scale(1.05);
         }

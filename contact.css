@@ -274,15 +274,13 @@
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-@media (max-width: 768px) {
-
-
+@media(max-width: 900px) {
 
     .navbar {
         flex-direction: column;
         height: auto;
-        padding: 10px 15px;
-        gap: 10px;
+        gap: 15px;
+        padding: 15px 10px 22px;
     }
 
     .logo {
@@ -290,27 +288,55 @@
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 15px;
-        align-items: center;
-        padding: 10px 0;
+        justify-content: center;
     }
+
     .nav-links a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .nav-buttons {
         justify-content: center;
-        gap: 10px;
     }
 
     .btn-outline,
     .btn-filled {
-        padding: 10px 20px;
-        font-size: 20px;
+        font-size: 18px;
+        padding: 8px 16px;
     }
+
 
     .hero {
         padding: 50px 5%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 25px;
     }
 }
