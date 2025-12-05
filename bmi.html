@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealHaven</title>
+    <style>
+        body{
+            align-items: center;
+            margin: 250px;
+        }
+        div{
+            width:400px;
+            height:400px;
+            background-color: #f9fcff;
+            margin : 250px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        input{
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tool-card">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="bmiWeight" placeholder="Enter weight (kg)">
+    <input type="number" id="bmiHeight" placeholder="Enter height (cm)">
+    <button onclick="calculateBMI()">Check BMI</button>
+    <p id="bmiResult"></p>
+</div>
+<script src = "script.js">
+
+</script>
+</body>
+</html>

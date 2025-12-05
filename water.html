@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            align-items: center;
+            margin: 250px;
+        }
+        div{
+            width:400px;
+            height:400px;
+            background-color: #f9fcff;
+            margin : 250px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tool-card">
+    <h2>Water Intake Calculator</h2>
+    <input type="number" id="waterWeight" placeholder="Enter weight (kg)">
+    <button onclick="calculateWater()">Check Water Intake</button>
+    <p id="waterResult"></p>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
