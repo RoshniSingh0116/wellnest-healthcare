@@ -3,30 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Water Intake Calculator</title>
+
     <style>
-         body{
-            align-items: center;
-            margin: 250px;
+        *{
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
         }
-        div{
-            width:400px;
-            height:400px;
-            background-color: #f9fcff;
-            margin : 250px;
+
+        body{
+            background: #e8f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
             align-items: center;
-            text-align: center;
             justify-content: center;
+            height: 100vh;
+        }
+
+        .tool-card{
+            width: 350px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+            border: 1px solid #e5e7eb;
+        }
+
+        .tool-card h2{
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #0d1b2a;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 12px;
+            width: 100%;
+            background: #009688;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover{
+            background: #00796b;
+        }
+
+        #waterResult{
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
         }
     </style>
+    <link rel="icon" type="image/png" href="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/2ac85f3f-2302-4098-b1d7-d10a8f4fe525.png">
 </head>
+
 <body>
+
     <div class="tool-card">
-    <h2>Water Intake Calculator</h2>
-    <input type="number" id="waterWeight" placeholder="Enter weight (kg)">
-    <button onclick="calculateWater()">Check Water Intake</button>
-    <p id="waterResult"></p>
-</div>
-<script src = "script.js"></script>
+        <h2>Water Intake Calculator</h2>
+
+        <input type="number" id="waterWeight" placeholder="Enter weight (kg)">
+
+        <button onclick="calculateWater()">Check Water Intake</button>
+
+        <p id="waterResult"></p>
+    </div>
+
+  <script src = "script.js"></script>
+
 </body>
 </html>

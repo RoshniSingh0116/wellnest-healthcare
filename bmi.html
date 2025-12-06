@@ -3,37 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealHaven</title>
+    <title>BMI Calculator</title>
+
     <style>
+        *{
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
         body{
-            align-items: center;
-            margin: 250px;
-        }
-        div{
-            width:400px;
-            height:400px;
-            background-color: #f9fcff;
-            margin : 250px;
-            align-items: center;
-            text-align: center;
+            background: #e8f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
             justify-content: center;
-        }
-        input{
-            text-align: center;
             align-items: center;
+            height: 100vh;
+        }
+
+        .tool-card{
+            width: 350px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+            border: 1px solid #e5e7eb;
+        }
+
+        h2{
+            font-size: 26px;
+            color: #0d1b2a;
+            margin-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 12px;
+            width: 100%;
+            background: #009688;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover{
+            background: #00796b;
+        }
+
+        #bmiResult{
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 600;
         }
     </style>
+    <link rel="icon" type="image/png" href="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/2ac85f3f-2302-4098-b1d7-d10a8f4fe525.png">
 </head>
-<body>
-    <div class="tool-card">
-    <h2>BMI Calculator</h2>
-    <input type="number" id="bmiWeight" placeholder="Enter weight (kg)">
-    <input type="number" id="bmiHeight" placeholder="Enter height (cm)">
-    <button onclick="calculateBMI()">Check BMI</button>
-    <p id="bmiResult"></p>
-</div>
-<script src = "script.js">
 
-</script>
+<body>
+
+    <div class="tool-card">
+        <h2>BMI Calculator</h2>
+
+        <input type="number" id="height" placeholder="Enter height (cm)">
+        <input type="number" id="weight" placeholder="Enter weight (kg)">
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p id="bmiResult"></p>
+    </div>
+
+    <script src = "script.js">
+        
+        
+    </script>
+
 </body>
 </html>
