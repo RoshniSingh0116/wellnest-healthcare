@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+    <title>BMI Calculator</title>
 
     <style>
         *{
@@ -34,13 +34,13 @@
         h2{
             font-size: 26px;
             color: #0d1b2a;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         input{
             width: 100%;
             padding: 12px;
-            margin: 12px 0;
+            margin: 10px 0;
             border-radius: 8px;
             border: 1px solid #ccc;
             font-size: 16px;
@@ -63,25 +63,32 @@
             background: #00796b;
         }
 
-        #ageResult{
+        #bmiResult{
             margin-top: 15px;
             font-size: 18px;
             font-weight: 600;
-            color: #009688;
         }
     </style>
     <link rel="icon" type="image/png" href="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/2ac85f3f-2302-4098-b1d7-d10a8f4fe525.png">
 </head>
+
 <body>
 
     <div class="tool-card">
-        <h2>Age Calculator</h2>
-        <input type="date" id="dob">
-        <button onclick="calculateAge()">Calculate Age</button>
-        <p id="ageResult"></p>
+        <h2>BMI Calculator</h2>
+
+        <input type="number" id="height" placeholder="Enter height (cm)">
+        <input type="number" id="weight" placeholder="Enter weight (kg)">
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p id="bmiResult"></p>
     </div>
 
-    
-<script src = "script.js"></script>
+    <script src = "../js/script.js">
+        
+        
+    </script>
+
 </body>
 </html>
